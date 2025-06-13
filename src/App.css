@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+  background-color: #1e1e1e;
+}
+
+@theme {
+  --color-dashboard: #262626;
+  --color-dashboardHover: #332f2a;
+  --color-redDashboard: #de4c4a;
+  --color-redSelectedDashboard: #472524;
+}
+
+@layer components {
+  .dashboardSectionImage {
+    @apply size-6;
+  }
+
+  .dashboardSection {
+    @apply p-2 gap-2 flex rounded duration-250 hover:bg-[#332F2A];
+  }
+}
