@@ -9,6 +9,7 @@ body {
   --color-dashboardHover: #332f2a;
   --color-redDashboard: #de4c4a;
   --color-redSelectedDashboard: #472524;
+  --color-bordergrey: #383838;
 }
 
 @layer components {
@@ -17,6 +18,6 @@ body {
   }
 
   .dashboardSection {
-    @apply p-2 gap-2 flex rounded duration-250 hover:bg-[#332F2A];
+    @apply p-2 gap-2 flex rounded hover:bg-[#332F2A] duration-100 items-center text;
   }
 }

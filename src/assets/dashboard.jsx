@@ -5,8 +5,8 @@ import add from "./icons/plus-7-64.png";
 import inbox from "./icons/inbox-svgrepo-com.svg";
 import date from "./icons/calendar-dates-svgrepo-com.svg";
 import pfp from "./icons/pfp.jpeg";
-import calendar from "./icons/calendar-svgrepo-com.svg"
-import filter from "./icons/window-svgrepo-com.svg"
+import calendar from "./icons/calendar-svgrepo-com.svg";
+import filter from "./icons/window-svgrepo-com.svg";
 
 function Dashboard() {
   return (
@@ -32,9 +32,8 @@ function Dashboard() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 mt-3">
-
-          <div className="dashboardSection text-redDashboard font-bold">
+        <div className="grid grid-cols-1 mt-3 ">
+          <div className="dashboardSection text-redDashboard font-bold active:ml-2 active:mr-2">
             <img className="dashboardSectionImage" src={add} alt="" />
             Add Task
           </div>
@@ -43,33 +42,45 @@ function Dashboard() {
             Search
           </div>
 
-
           <div className="dashboardSection">
             <img className="dashboardSectionImage" src={inbox} alt="" />
             Inbox
           </div>
 
-
           <div className="dashboardSection">
-            <img className="dashboardSectionImage" src={calendar} alt="" />
+            <img className="dashboardSectionImage " src={calendar} alt="" />
             Today
           </div>
-
 
           <div className="dashboardSection">
             <img className="dashboardSectionImage" src={date} alt="" />
             Upcoming
           </div>
 
-          <div className="dashboardSection">
-            <img className="dashboardSectionImage" src={filter} alt="" />
+          <div className="dashboardSection ">
+            <img className="dashboardSectionImage " src={filter} alt="" />
             Filters and Labels
           </div>
-
-
-
-
         </div>
+      </div>
+
+      <div className="fixed flex top-1/6 left-1/3 h-45 w-135 border rounded-2xl text-gray-300  ">
+        <div className="h-2/3 border-b text-gray-300   left-0 w-full p-3 grid-cols-1 grid  ">
+          <input
+            className=""
+            id="TaskName"
+            type="text"
+            name="TaskName"
+            value="Task Name"
+          />
+          <input
+            id="Description"
+            type="text"
+            name="Description"
+            value="Description"
+          />
+        </div>
+        <div></div>
       </div>
     </>
   );
