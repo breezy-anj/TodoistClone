@@ -64,7 +64,7 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="fixed flex top-1/6 left-1/3 h-45 w-135 border rounded-2xl text-gray-300  ">
+      <div className="fixed flex top-1/6 left-1/3 h-45  w-135 border rounded-2xl text-gray-300  ">
         <div className="h-2/3 border-b text-gray-300   left-0 w-full p-3 grid-cols-1 grid  ">
           <input
             className=""
